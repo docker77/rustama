@@ -1,6 +1,7 @@
-RUSTAMA Shopify store with React/NextJS/Tailwind/React Query
+# RUSTAMA Shopify store with React/NextJS/Tailwind/React Query
 
-Original link:
+_Original link to store:_
+
 [https://rustama.myshopify.com](https://rustama.myshopify.com)
 
 Trying to put my hands on Shopify tech stack ))
@@ -14,4 +15,6 @@ NEXT_PUBLIC_SHOPIFY_STOREFRONT_TOKEN=securitytoken
 NEXT_PUBLIC_SHOPIFY_STORE_NAME=rustama (as in rustama.myshopify.com)
 ```
 
-### yarn dev
+## yarn dev
+
+Open store on `localhost:3000`
