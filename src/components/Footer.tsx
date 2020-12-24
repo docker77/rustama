@@ -4,18 +4,18 @@ export function Footer() {
   return (
     <div className="flex flex-col items-center">
       <footer className="w-full">
-        <div className="container px-8 h-full py-16 flex justify-center lg:block">
+        <div className="container flex justify-center h-full px-8 py-16 lg:block">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 row-gap-8 col-gap-16">
-            <div className="sm:col-span-3 lg:col-span-1 flex sm:justify-center lg:justify-start items-start">
+            <div className="flex items-start sm:col-span-3 lg:col-span-1 sm:justify-center lg:justify-start">
               <ShoppingBag />
             </div>
             <div>
-              <h3 className="font-semibold text-lg">About Us</h3>
+              <h3 className="text-lg font-semibold">About Us</h3>
               <nav className="pt-2 leading-loose">
                 <ul>
                   <li>
                     <a
-                      className="text-gray-600 hover:text-gray-800 text-sm group relative"
+                      className="relative text-sm text-gray-600 hover:text-gray-800 group"
                       href="#"
                     >
                       About Us
@@ -23,7 +23,7 @@ export function Footer() {
                   </li>
                   <li>
                     <a
-                      className="text-gray-600 hover:text-gray-800 text-sm group relative"
+                      className="relative text-sm text-gray-600 hover:text-gray-800 group"
                       href="#"
                     >
                       Newsroom
@@ -31,7 +31,7 @@ export function Footer() {
                   </li>
                   <li>
                     <a
-                      className="text-gray-600 hover:text-gray-800 text-sm group relative"
+                      className="relative text-sm text-gray-600 hover:text-gray-800 group"
                       href="#"
                     >
                       Careers
@@ -39,7 +39,7 @@ export function Footer() {
                   </li>
                   <li>
                     <a
-                      className="text-gray-600 hover:text-gray-800 text-sm group relative"
+                      className="relative text-sm text-gray-600 hover:text-gray-800 group"
                       href="#"
                     >
                       Sitemap
@@ -49,12 +49,12 @@ export function Footer() {
               </nav>
             </div>
             <div>
-              <h3 className="font-semibold text-lg">Help &amp; FAQ</h3>
+              <h3 className="text-lg font-semibold">Help &amp; FAQ</h3>
               <nav className="pt-2 leading-loose">
                 <ul>
                   <li>
                     <a
-                      className="text-gray-600 hover:text-gray-800 text-sm group relative"
+                      className="relative text-sm text-gray-600 hover:text-gray-800 group"
                       href="#"
                     >
                       Online Ordering
@@ -62,7 +62,7 @@ export function Footer() {
                   </li>
                   <li>
                     <a
-                      className="text-gray-600 hover:text-gray-800 text-sm group relative"
+                      className="relative text-sm text-gray-600 hover:text-gray-800 group"
                       href="#"
                     >
                       Shipping
@@ -70,7 +70,7 @@ export function Footer() {
                   </li>
                   <li>
                     <a
-                      className="text-gray-600 hover:text-gray-800 text-sm group relative"
+                      className="relative text-sm text-gray-600 hover:text-gray-800 group"
                       href="#"
                     >
                       Billing
@@ -78,7 +78,7 @@ export function Footer() {
                   </li>
                   <li>
                     <a
-                      className="text-gray-600 hover:text-gray-800 text-sm group relative"
+                      className="relative text-sm text-gray-600 hover:text-gray-800 group"
                       href="#"
                     >
                       Returns &amp; Exchanges
@@ -86,7 +86,7 @@ export function Footer() {
                   </li>
                   <li>
                     <a
-                      className="text-gray-600 hover:text-gray-800 text-sm group relative"
+                      className="relative text-sm text-gray-600 hover:text-gray-800 group"
                       href="#"
                     >
                       Contact Us
@@ -96,12 +96,12 @@ export function Footer() {
               </nav>
             </div>
             <div>
-              <h3 className="font-semibold text-lg">My Account</h3>
+              <h3 className="text-lg font-semibold">My Account</h3>
               <nav className="pt-2 leading-loose">
                 <ul>
                   <li>
                     <a
-                      className="text-gray-600 hover:text-gray-800 text-sm group relative"
+                      className="relative text-sm text-gray-600 hover:text-gray-800 group"
                       href="#"
                     >
                       Order Status
@@ -109,7 +109,7 @@ export function Footer() {
                   </li>
                   <li>
                     <a
-                      className="text-gray-600 hover:text-gray-800 text-sm group relative"
+                      className="relative text-sm text-gray-600 hover:text-gray-800 group"
                       href="#"
                     >
                       Favourites
@@ -117,7 +117,7 @@ export function Footer() {
                   </li>
                   <li>
                     <a
-                      className="text-gray-600 hover:text-gray-800 text-sm group relative"
+                      className="relative text-sm text-gray-600 hover:text-gray-800 group"
                       href="#"
                     >
                       My Account
@@ -129,9 +129,9 @@ export function Footer() {
           </div>
         </div>
       </footer>
-      <div className="py-4 w-full">
+      <div className="w-full py-4">
         <div className="px-6">
-          <div className="container mx-auto flex text-gray-600 text-sm items-center justify-center">
+          <div className="container flex items-center justify-center mx-auto text-sm text-gray-600">
             <div className="grid grid-flow-col gap-3">
               <a aria-label="GitHub" href="#" className="hover:text-indigo-500">
                 <svg
@@ -189,7 +189,7 @@ export function Footer() {
               </a>
             </div>
             <span className="ml-8">
-              Copyright © <a href="https://statik.ly">Statik.ly</a>
+              Copyright © <a href="https://rustama.myshopify.com">Rustama Shopify</a>
             </span>
           </div>
         </div>

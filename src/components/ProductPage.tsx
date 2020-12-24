@@ -115,7 +115,7 @@ export function ProductPage({ product }: ProductPageProps) {
     <>
       {/* <pre>{JSON.stringify(product, null, 2)}</pre> */}
       <Head>
-        <title>{product.name} • Statik.ly</title>
+        <title>{product.name} • Rustama</title>
         <meta property="description" content={product.description} />
         <meta property="image" content={product.images[0].src} />
         {/* <meta
@@ -153,10 +153,10 @@ export function ProductPage({ product }: ProductPageProps) {
         totalSlides={product.images.length}
         infinite
       >
-        <section className="text-gray-700 body-font overflow-hidden">
+        <section className="overflow-hidden text-gray-700 body-font">
           <div className="container px-5 py-24 mx-auto">
-            <div className="mx-auto flex flex-wrap">
-              <div className="lg:w-1/2 w-full lg:h-auto h-64">
+            <div className="flex flex-wrap mx-auto">
+              <div className="w-full h-64 lg:w-1/2 lg:h-auto">
                 <Slider>
                   {product.images.map((image, index) => (
                     <Slide key={image.src} index={index}>
@@ -168,16 +168,16 @@ export function ProductPage({ product }: ProductPageProps) {
                     </Slide>
                   ))}
                 </Slider>
-                <div className="flex justify-center gap-4 py-4">
+                <div className="flex justify-center py-4 gap-4">
                   {product.images.length > 1
                     ? product.images.map((image, index) => (
                         <Dot
                           key={index}
                           slide={index}
-                          className="h-20 w-20 disabled:opacity-50 rounded-lg overflow-hidden"
+                          className="w-20 h-20 overflow-hidden rounded-lg disabled:opacity-50"
                         >
                           <img
-                            className="object-cover h-full w-full"
+                            className="object-cover w-full h-full"
                             src={image.src}
                             alt={image.altText}
                           />
@@ -186,11 +186,11 @@ export function ProductPage({ product }: ProductPageProps) {
                     : undefined}
                 </div>
               </div>
-              <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                <h2 className="text-sm title-font uppercase text-gray-500 tracking-widest">
+              <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
+                <h2 className="text-sm tracking-widest text-gray-500 uppercase title-font">
                   {product.vendor}
                 </h2>
-                <h1 className="text-gray-900 text-4xl title-font font-bold mb-1">
+                <h1 className="mb-1 text-4xl font-bold text-gray-900 title-font">
                   {product.name}
                 </h1>
                 <div className="flex mb-4">
@@ -222,7 +222,7 @@ export function ProductPage({ product }: ProductPageProps) {
                   return (
                     <div
                       key={option.name}
-                      className="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5"
+                      className="flex items-center pb-5 mt-6 mb-5 border-b-2 border-gray-200"
                     >
                       <Component
                         options={option.values}
@@ -236,16 +236,16 @@ export function ProductPage({ product }: ProductPageProps) {
                 <div className="flex items-center">
                   <Price
                     price={product.variants[0].price}
-                    className="title-font font-bold text-2xl text-gray-900"
+                    className="text-2xl font-bold text-gray-900 title-font"
                   />
-                  <div className="ml-auto flex flex-col items-center">
+                  <div className="flex flex-col items-center ml-auto">
                     <button
                       onClick={addProductToCart}
-                      className="font-bold flex text-white bg-indigo-500 border-0 py-3 px-10 text-lg focus:outline-none hover:bg-indigo-600 rounded-full"
+                      className="flex px-10 py-3 text-lg font-bold text-white bg-indigo-500 border-0 rounded-full focus:outline-none hover:bg-indigo-600"
                     >
                       Add to Cart
                     </button>
-                    <p className="text-gray-600 text-center pt-2 text-xs">
+                    <p className="pt-2 text-xs text-center text-gray-600">
                       {product.totalInventory} In stock
                     </p>
                   </div>
