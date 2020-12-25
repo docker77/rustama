@@ -1,4 +1,4 @@
-import { ShoppingBag } from 'react-feather'
+import { Hexagon } from 'react-feather'
 
 export function Footer() {
   return (
@@ -7,7 +7,7 @@ export function Footer() {
         <div className="container flex justify-center h-full px-8 py-16 lg:block">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 row-gap-8 col-gap-16">
             <div className="flex items-start sm:col-span-3 lg:col-span-1 sm:justify-center lg:justify-start">
-              <ShoppingBag />
+              <Hexagon />
             </div>
             <div>
               <h3 className="text-lg font-semibold">About Us</h3>
