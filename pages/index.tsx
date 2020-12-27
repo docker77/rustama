@@ -28,7 +28,7 @@ export default function HomePage({ tags }: HomePageProps) {
   return (
     <>
       <Head>
-        <title>RUSTAMA Next Shopify</title>
+        <title>RustamA Next Shopify</title>
         <meta
           property="description"
           content="E-Commerce solution built with Typescript and NextJS."

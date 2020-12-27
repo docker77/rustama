@@ -31,7 +31,7 @@ function Menu() {
         <div className="flex flex-col flex-wrap items-center justify-between h-16 px-8 md:flex-row">
           <NextLink href="/">
             <a className="flex items-center mb-4 text-lg font-bold tracking-wide text-gray-900 uppercase md:mb-0">
-              <Hexagon className="mr-2" /> RUSTAMA Shopify Store
+              <Hexagon className="mr-2" /> RustamA Shopify Store
             </a>
           </NextLink>
           <Cart />
